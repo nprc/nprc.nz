@@ -3,4 +3,56 @@
 		<loc>http://nprc.nz/</loc>
 		<changefreq>weekly</changefreq>
 	</url>
+	<url>
+		<loc>http://nprc.nz/about-us.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/what-we-believe.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/reformation-principles.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/the-session.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/creeds-and-confessions.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/apostles-creed.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/nicene-creed.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/athanasian-creed.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/belgic-confession.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/heidelberg-catechism.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/canons-of-dort.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/westminster-confession.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://nprc.nz/sermons.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
 </urlset>
