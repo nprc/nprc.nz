@@ -81,11 +81,11 @@
 		padding: 3em 1.25em;
 	}
 
-		#footer .copyright {
+		#footer .copyright, #footer .return-to-top {
 			line-height: inherit;
 		}
 
-			#footer .copyright li {
+			#footer .copyright li, #footer .return-to-top li {
 				border-left: 0;
 				display: block;
 				margin: 0;
