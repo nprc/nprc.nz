@@ -10,7 +10,7 @@
 		color: #ffffff;
 	}
 
-	body, html, #skel-layers-wrapper {
+	body, html, #page-wrapper {
 		height: 100%;
 	}
 
@@ -29,14 +29,14 @@
 /* Icon */
 
 	.icon.major {
-		-ms-behavior: url("css/ie/PIE.htc");
+		-ms-behavior: url("js/ie/PIE.htc");
 	}
 
 /* Image */
 
 	.image {
 		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
+		-ms-behavior: url("js/ie/PIE.htc");
 	}
 
 		.image:before {
@@ -45,7 +45,7 @@
 
 		.image img {
 			position: relative;
-			-ms-behavior: url("css/ie/PIE.htc");
+			-ms-behavior: url("js/ie/PIE.htc");
 		}
 
 /* Form */
@@ -56,7 +56,7 @@
 	select,
 	textarea {
 		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
+		-ms-behavior: url("js/ie/PIE.htc");
 	}
 
 		input[type="text"]:focus,
@@ -64,7 +64,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			-ms-behavior: url("css/ie/PIE.htc");
+			-ms-behavior: url("js/ie/PIE.htc");
 		}
 
 	input[type="text"],
@@ -158,7 +158,7 @@
 	.dropotron {
 		background: #272833;
 		box-shadow: none !important;
-		-ms-behavior: url("css/ie/PIE.htc");
+		-ms-behavior: url("js/ie/PIE.htc");
 	}
 
 		.dropotron > li a, .dropotron > li span {
@@ -190,5 +190,5 @@
 		}
 
 		#banner:after {
-			background-image: url("images/banner-overlay.png");
+			background-image: url("images/ie/banner-overlay.png");
 		}
