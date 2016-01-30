@@ -3999,11 +3999,3 @@
 	text-indent: -1em;
 	padding-left: 1em;
 }
-
-p.footer-badge {
-	margin-top: 1em;
-}
-
-	p.footer-badge a {
-		border-bottom: 0 !important;
-	}
