@@ -1,0 +1,5 @@
+# SEO Error Redirects
+RewriteEngine On
+RewriteRule ^privacy.html&sa=D&usg=AFQjCNEuhlJOCVnlWxhPewlif1GjQu86sA /privacy.html [R=301,L]
+RewriteEngine ^m/ / [R=301,L]
+RewriteEngine ^mobile/ / [R=301,L]
