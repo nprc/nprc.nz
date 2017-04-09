@@ -18,7 +18,7 @@ foreach ($files as $file)
 		echo '<item><title>';
 		echo substr($file, 0, -4);
 		echo '</title><pubDate>';
-		echo date(DATE_RFC822, filemtime('sermons/' . $file));
+		echo date('r', filemtime('sermons/' . $file));
 		echo '</pubDate><link>https://nprc.nz/sermons/';
 		echo htmlentities($file);
 		echo '</link></item>';
