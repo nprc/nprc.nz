@@ -3999,3 +3999,10 @@
 	text-indent: -1em;
 	padding-left: 1em;
 }
+
+/* Hide Android Store in Edge */
+@supports (-ms-ime-align:auto) {
+	ul.icons li:nth-child(2) {
+		display: none !important;
+	}
+}
