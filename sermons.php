@@ -3,6 +3,7 @@
 $files = scandir('sermons', SCANDIR_SORT_DESCENDING);
 
 // Display the header
+date_default_timezone_set('Pacific/Auckland'); 
 header('Content-type: text/xml');
 echo '<?xml version="1.0" encoding="utf-8" standalone="yes"?>';
 echo '<rss version="2.0">';
