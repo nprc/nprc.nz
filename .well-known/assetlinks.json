@@ -1,0 +1,12 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "nz.co.conglomo.nprc",
+    "sha256_cert_fingerprints":
+    [
+        "D2:75:BB:2B:3E:44:0D:D8:CF:A2:97:3F:E8:E5:99:00:E5:08:16:31:67:F5:2C:86:B4:1C:09:DC:42:01:4F:33",
+        "71:86:14:6F:63:2D:C7:FF:92:37:AF:B0:36:BB:8B:BE:6E:ED:E0:65:97:08:3F:04:54:76:ED:4D:C7:5A:3A:50"
+    ]
+  }
+}]
