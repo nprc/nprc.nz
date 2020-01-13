@@ -56,6 +56,18 @@
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
+		<loc>https://nprc.nz/other-resources.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://nprc.nz/westminster-shorter-catechism.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://nprc.nz/westminster-larger-catechism.html</loc>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
 		<loc>https://nprc.nz/sermons.html</loc>
 		<changefreq>weekly</changefreq>
 	</url>
