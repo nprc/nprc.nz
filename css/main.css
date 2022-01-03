@@ -4006,3 +4006,8 @@
 		display: none !important;
 	}
 }
+
+/* Fix button spacing when overflowing to a new line */
+ul.actions.small li  {
+	padding: 0.5em 0.5em 0 0;
+}
