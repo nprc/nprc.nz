@@ -1,5 +1,8 @@
 # SEO Error Redirects
 RewriteEngine On
 RewriteRule ^privacy.html&sa=D&usg=AFQjCNEuhlJOCVnlWxhPewlif1GjQu86sA /privacy.html [R=301,L]
-RewriteEngine ^m/ / [R=301,L]
-RewriteEngine ^mobile/ / [R=301,L]
+RewriteRule ^m/ / [R=301,L]
+RewriteRule ^mobile/ / [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.nprc\.nz [NC]
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ https://nprc\.nz%{REQUEST_URI}
