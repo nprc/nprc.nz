@@ -1,5 +1,7 @@
 # SEO Error Redirects
 RewriteEngine On
+RewriteRule ^android.html / [R=301,L]
+RewriteRule ^wp81.html / [R=301,L]
 RewriteRule ^privacy.html&sa=D&usg=AFQjCNEuhlJOCVnlWxhPewlif1GjQu86sA /privacy.html [R=301,L]
 RewriteRule ^m/ / [R=301,L]
 RewriteRule ^mobile/ / [R=301,L]
