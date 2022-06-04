@@ -5,6 +5,7 @@ RewriteRule ^wp81.html / [R=301,L]
 RewriteRule ^privacy.html&sa=D&usg=AFQjCNEuhlJOCVnlWxhPewlif1GjQu86sA /privacy.html [R=301,L]
 RewriteRule ^m/ / [R=301,L]
 RewriteRule ^mobile/ / [R=301,L]
+RewriteRule ^sermons/(.*)$ https://objectstorage.ap-sydney-1.oraclecloud.com/n/sd80me0per9s/b/nprc/o/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.nprc\.nz [NC]
 RewriteCond %{HTTPS} on
 RewriteRule ^(.*)$ https://nprc\.nz%{REQUEST_URI}

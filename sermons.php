@@ -1,6 +1,14 @@
 <?php
-// Get the files
-$files = scandir('sermons', SCANDIR_SORT_DESCENDING);
+// Get the list of files from object storage
+$json = file_get_contents('https://objectstorage.ap-sydney-1.oraclecloud.com/n/sd80me0per9s/b/nprc/o/');
+$file_data = json_decode($json);
+
+$files = array();
+foreach ($file_data->objects as $d)
+{
+	  $files[] = $d->name;   
+}
+rsort($files);
 
 // Display the header
 date_default_timezone_set('Pacific/Auckland'); 
@@ -19,7 +27,7 @@ foreach ($files as $file)
 		echo '<item><title>';
 		echo substr($file, 0, -4);
 		echo '</title><pubDate>';
-		echo date('r', filemtime('sermons/' . $file));
+		echo date('r', strtotime(substr($file, 0, 10)));
 		echo '</pubDate><link>https://nprc.nz/sermons/';
 		echo htmlentities($file);
 		echo '</link></item>';
