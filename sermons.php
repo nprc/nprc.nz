@@ -1,14 +1,21 @@
 <?php
-// Get the list of files from object storage
-$json = file_get_contents('https://objectstorage.ap-sydney-1.oraclecloud.com/n/sd80me0per9s/b/nprc/o/');
-$file_data = json_decode($json);
-
 $files = array();
-foreach ($file_data->objects as $d)
-{
-	  $files[] = $d->name;   
+$url = "https://nprc.blob.core.windows.net/sermons?restype=container&comp=list";
+$xmlString = file_get_contents($url);
+
+if ($xmlString !== false) {
+	// Parse the XML response
+	$xml = simplexml_load_string($xmlString);
+
+	$files = array();
+	if (isset($xml->Blobs->Blob)) {
+		foreach ($xml->Blobs->Blob as $blob) {
+			$files[] = (string)$blob->Name;
+		}
+	}
+
+	rsort($files);
 }
-rsort($files);
 
 // Display the header
 date_default_timezone_set('Pacific/Auckland'); 
@@ -22,16 +29,17 @@ echo '<link>https://nprc.nz/sermons.html</link>';
 // Display the files
 foreach ($files as $file)
 {
-	if (substr(strtolower($file), -4) == '.mp3' || substr(strtolower($file), -4) == '.pdf')
-	{
-		echo '<item><title>';
-		echo substr($file, 0, -4);
-		echo '</title><pubDate>';
-		echo date('r', strtotime(substr($file, 0, 10)));
-		echo '</pubDate><link>https://nprc.nz/sermons/';
-		echo htmlentities($file);
-		echo '</link></item>';
-	}
+    $ext = strtolower(substr($file, -4));
+    if ($ext === '.mp3' || $ext === '.pdf')
+    {
+        echo '<item><title>';
+        echo substr($file, 0, -4);
+        echo '</title><pubDate>';
+        echo date('r', strtotime(substr($file, 0, 10)));
+        echo '</pubDate><link>https://nprc.nz/sermons/';
+        echo htmlentities($file);
+        echo '</link></item>';
+    }
 }
 
 // Display the footer
