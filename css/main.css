@@ -4011,3 +4011,14 @@
 ul.actions.small li  {
 	padding: 0.5em 0.5em 0 0;
 }
+
+/* Confessional references */
+.references {
+	font-size: 0.8em;
+	margin: 1em 0;
+}
+
+/* Fix ESV link hover */
+a.esv-crossref-link:hover {
+	color: #72abbf !important;
+}
